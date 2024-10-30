@@ -1,0 +1,96 @@
+/**
+ * L7 Display Posts
+ * http://layer7web.com
+ *
+ * Copyright (c) 2015 Jeffrey S. Mattson
+ * Licensed under the GPLv2+ license.
+ */
+
+$posts-margin: 30px;
+$button-transition: background-color .3s;
+
+/// Border Radius Mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/// The primary tag posts-temp styles
+.ptp-container {
+	.ptp-inner-cont {
+		box-sizing: border-box;		
+		margin-bottom: $posts-margin;
+		margin-top: $posts-margin;
+		padding: 20px;
+		.ptp-info {
+			.ptp-info-date {
+				display: inline-block;
+				padding-right: 20px;
+			}
+			.ptp-info-category {
+				display: inline-block;
+				padding-right: 20px;
+			}
+		}
+		.ptp-content {
+			padding-top: 10px;
+		}
+		.ptp-author-info {
+			.ptp-avatar {
+				@include border-radius(50%);
+				display: inline-block;
+				margin-right: 10px;
+				overflow: hidden;
+				height: 40px;		
+			}
+			.ptp-author-desc {
+				display: inline-block;
+				top: 0px;
+				vertical-align: top;
+				width: 75%;
+				p {
+					font-size: .8em;
+				}
+			}
+		}
+		.ptp-info-tags {
+			margin-top: 20px;
+			a {
+				@include border-radius(3px);
+			    background-color: #18a1f9;	    
+			    color: #fff;
+			    padding: 3px;
+			    text-decoration: none;
+			    transition: $button-transition;			    
+			}
+			a:hover {
+				background-color: #5dbcf7;
+				transition: $button-transition;
+			}
+		}
+	}
+	.two-columns {
+		display: inline-block;
+		overflow: hidden;
+		min-width: 320px;
+		width: 50%;
+	}
+	button {
+		@include border-radius(3px);
+		clear: both;
+		border: none;
+		background-color: #18a1f9;	
+		color: #fff;
+		font-size: inherit;
+		margin-left: 5px;
+		padding: 3px;
+		text-decoration: none;
+		transition: $button-transition;		
+	}
+	button:hover {
+		background-color: #5dbcf7;
+		transition: $button-transition;
+	}
+}

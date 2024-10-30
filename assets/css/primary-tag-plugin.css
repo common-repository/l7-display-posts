@@ -1,0 +1,67 @@
+/**
+ * L7 Display Posts
+ * http://layer7web.com
+ *
+ * Copyright (c) 2015 Jeffrey S. Mattson
+ * Licensed under the GPLv2+ license.
+ */
+.ptp-container .ptp-inner-cont {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 20px; }
+  .ptp-container .ptp-inner-cont .ptp-info .ptp-info-date {
+    display: inline-block;
+    padding-right: 20px; }
+  .ptp-container .ptp-inner-cont .ptp-info .ptp-info-category {
+    display: inline-block;
+    padding-right: 20px; }
+  .ptp-container .ptp-inner-cont .ptp-content {
+    padding-top: 10px; }
+  .ptp-container .ptp-inner-cont .ptp-author-info .ptp-avatar {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    height: 40px; }
+  .ptp-container .ptp-inner-cont .ptp-author-info .ptp-author-desc {
+    display: inline-block;
+    top: 0px;
+    vertical-align: top;
+    width: 75%; }
+    .ptp-container .ptp-inner-cont .ptp-author-info .ptp-author-desc p {
+      font-size: .8em; }
+  .ptp-container .ptp-inner-cont .ptp-info-tags {
+    margin-top: 20px; }
+    .ptp-container .ptp-inner-cont .ptp-info-tags a {
+      border-radius: 3px;
+      background-color: #18a1f9;
+      color: #fff;
+      padding: 3px;
+      text-decoration: none;
+      transition: background-color 0.3s; }
+    .ptp-container .ptp-inner-cont .ptp-info-tags a:hover {
+      background-color: #5dbcf7;
+      transition: background-color 0.3s; }
+
+.ptp-container .two-columns {
+  display: inline-block;
+  overflow: hidden;
+  min-width: 320px;
+  width: 50%; }
+
+.ptp-container button {
+  border-radius: 3px;
+  clear: both;
+  border: none;
+  background-color: #18a1f9;
+  color: #fff;
+  font-size: inherit;
+  margin-left: 5px;
+  padding: 3px;
+  text-decoration: none;
+  transition: background-color 0.3s; }
+
+.ptp-container button:hover {
+  background-color: #5dbcf7;
+  transition: background-color 0.3s; }
